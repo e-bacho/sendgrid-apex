@@ -45,7 +45,7 @@ email.setHtml('<strong>Hello World!</strong>');
 Send it.
 
 ```java
-String response = sendgrid.send(email);
+SendGrid.SendGridResponse response = SendGrid.send(email);
 ```
 
 ### addTo
@@ -246,9 +246,9 @@ Right click on the sendgrid-apex containing folder, and choose "MavensMate > Cre
 
 On the next screen enter the following:
 
-* For project name: 'sendgrid-apex' 
+* For project name: 'sendgrid-apex'
 * For username: enter your email address
-* For password: enter your password APPENDED with your salesforce security token. (see above for how to generate the security token) 
+* For password: enter your password APPENDED with your salesforce security token. (see above for how to generate the security token)
 
 When you're ready click the 'Create Project' button.
 
@@ -280,7 +280,7 @@ On the next screen under components, click "Add".
 
 On the next screeen choose "Apex Class" under Component Type.
 
-Check all the SendGrid related classes. 
+Check all the SendGrid related classes.
 
 Then click "Add to Package".
 
@@ -294,7 +294,7 @@ Then on the package show page, click "Upload".
 
 On the next screen, enter "052114-sendgrid-apex" for the name (change the mm/dd/yy to the current).
 
-Set version number to 1.0. 
+Set version number to 1.0.
 
 Set the description to: "This Apex Toolkit allows you to quickly and easily send emails through SendGrid using Salesforce Apex."
 
